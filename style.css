@@ -1,0 +1,22 @@
+.row {
+  margin-bottom: 50px;
+}
+.card {
+  margin: auto;
+}
+
+footer {
+ background-color: #176a90;
+ color: white;
+}
+
+footer a {
+  margin-left: 10px;
+  color: white;
+  margin: auto;
+}
+
+.fab {
+  margin-left: 10px;
+  margin-right: 10px;
+}

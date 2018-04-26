@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="cosplayRepairStationApp">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Cosplay Repair Station</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#blog" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Blog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#blog">Blog Main</a>
+            <a class="dropdown-item" href="#blog-news">News</a>
+            <a class="dropdown-item" href="#blog-tutorials">Tutorials</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main">
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+  </div>
+
+  <footer class="text-center">
+    Get in touch with us:
+    <a href="https://www.facebook.com/CosplayRepairStation/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/cosplayrepair" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/cosplayrepairstation/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
